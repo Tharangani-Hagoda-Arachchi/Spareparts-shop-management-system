@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{064184F9-5C35-423E-92EE-D68C7F79A9FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project_GUI</RootNamespace>
+    <AssemblyName>project GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add user.Designer.cs">
+      <DependentUpon>Add user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catagory.Designer.cs">
+      <DependentUpon>catagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order payment.Designer.cs">
+      <DependentUpon>order payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log out.Designer.cs">
+      <DependentUpon>Log out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loging.Designer.cs">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_item_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_item_detail.Designer.cs">
+      <DependentUpon>order_item_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supply Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply Detail.Designer.cs">
+      <DependentUpon>Supply Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web page product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web page product.Designer.cs">
+      <DependentUpon>web page product.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add user.resx">
+      <DependentUpon>Add user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catagory.resx">
+      <DependentUpon>catagory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order payment.resx">
+      <DependentUpon>order payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log out.resx">
+      <DependentUpon>Log out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loging.resx">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_item_detail.resx">
+      <DependentUpon>order_item_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply Detail.resx">
+      <DependentUpon>Supply Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web page product.resx">
+      <DependentUpon>web page product.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_1608259230261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-login-desktop-others-blue-computer-prints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_1612623505907.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_16126235059071.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jayani cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jayani cake1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-login-desktop-others-blue-computer-prints1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\di.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bike1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc 12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg 3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cus reg 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order item.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc1 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc 121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bike11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cus reg 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc 9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report-Writing1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

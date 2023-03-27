@@ -1,0 +1,40 @@
+C:\Users\DELL\source\repos\project GUI\project GUI\bin\Debug\project GUI.exe.config
+C:\Users\DELL\source\repos\project GUI\project GUI\bin\Debug\project GUI.exe
+C:\Users\DELL\source\repos\project GUI\project GUI\bin\Debug\project GUI.pdb
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project GUI.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Properties.Resources.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project GUI.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project GUI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project GUI.exe
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project GUI.pdb
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Dashboard.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.frmLoading.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Loging.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Log_out.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Bill.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Add_user.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Order.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Customer.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Empoyee.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Product.resources
+C:\Users\DELL\source\repos\project GUI\project GUI\obj\Debug\project_GUI.Report.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\bin\Debug\project GUI.exe.config
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\bin\Debug\project GUI.exe
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\bin\Debug\project GUI.pdb
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project GUI.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Add_user.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Bill.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Customer.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Order.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Dashboard.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Empoyee.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.frmLoading.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Log_out.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Loging.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Product.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Properties.Resources.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project_GUI.Report.resources
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project GUI.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project GUI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project GUI.exe
+C:\Users\DELL\Desktop\GUI CW 2\project GUI\project GUI\obj\Debug\project GUI.pdb
